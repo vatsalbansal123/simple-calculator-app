@@ -1,0 +1,195 @@
+Screen:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        MDTextField:
+            id: text_input
+            text: '0'
+            halign: 'right'
+            font_size: 65
+            # size_hint: (1, 0.3)
+            disabled: True
+        GridLayout:
+            cols: 4
+            rows: 1
+            size_hint_y: 0.25
+            GridLayout:
+                cols: 1
+                rows: 1
+                size_hint_x: 0.4
+                FocusButton:
+                    focus_color: 90/255,90/255,90/255,1
+                    unfocus_color: 100/255,100/255,100/255,1
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: "C"
+                    md_bg_color: 100/255,100/255,100/255,1
+                    elevation: 0
+                    on_release: app.clear_textinput()
+            FocusButton:
+                focus_color: 90/255,90/255,90/255,1
+                unfocus_color: 100/255,100/255,100/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: u"\u00AB"
+                md_bg_color: 100/255,100/255,100/255,1
+                elevation: 0
+                on_release: app.clear_lastinput()
+            FocusButton:
+                focus_color: 245/255,130/255,0/245,1
+                unfocus_color: 255/255,140/255,0/255, 1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "/"
+                md_bg_color: 255/255,140/255,0/255, 1
+                elevation: 0
+                on_release: app.update_textinput('/')
+        GridLayout:
+            cols: 4
+            rows: 6
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "7"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('7')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "8"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('8')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "9"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('9')
+            FocusButton:
+                focus_color: 245/255,130/255,0/245,1
+                unfocus_color: 255/255,140/255,0/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "x"
+                md_bg_color: 255/255,140/255,0/255,1
+                elevation: 0
+                on_release: app.update_textinput('*')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "4"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('4')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "5"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('5')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "6"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('6')
+            FocusButton:
+                focus_color: 245/255,130/255,0/245,1
+                unfocus_color: 255/255,140/255,0/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "-"
+                md_bg_color: 255/255,140/255,0/255,1
+                elevation: 0
+                on_release: app.update_textinput('-')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "1"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('1')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "2"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('2')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "3"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('3')
+            FocusButton:
+                focus_color: 245/255,130/255,0/245,1
+                unfocus_color: 255/255,140/255,0/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "+"
+                md_bg_color: 255/255,140/255,0/255,1
+                elevation: 0
+                on_release: app.update_textinput('+')
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "+/-"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.change_sign()
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "0"
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('0')
+
+            FocusButton:
+                focus_color: 66/255,66/255,66/255,1
+                unfocus_color: 48/255,48/255,48/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "."
+                md_bg_color: 48/255,48/255,48/255,1
+                elevation: 0
+                on_release: app.update_textinput('.')
+
+            FocusButton:
+                focus_color: 245/255,130/255,0/245,1
+                unfocus_color: 255/255,140/255,0/255,1
+                size_hint: (.2,.2)
+                font_size: 32
+                text: "="
+                md_bg_color: 255/255,140/255,0/255,1
+                elevation: 0
+                on_release: app.display_result()
