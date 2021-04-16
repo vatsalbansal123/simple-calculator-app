@@ -15,7 +15,7 @@
 
 ## **Installation**
 
-To run the app, you must have [python](https://www.python.org/downloads/) and [git](https://git-scm.com/downloads) properly installed in your machine. Then use these 5 simple commands to run the app.
+To run the app, you must have [python](https://www.python.org/downloads/) and [git](https://git-scm.com/downloads) properly installed in your machine. Then use these 4 simple commands to run the app.
 
 ```
 git clone https://github.com/vatsalbansal123/SimpleCalculator.git
