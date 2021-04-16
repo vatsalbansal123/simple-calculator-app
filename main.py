@@ -72,10 +72,11 @@ class CalculatorApp(MDApp):
 
     def change_sign(self):
         text = self.screen.ids.text_input.text
-        if text[0] == "-":
-            self.screen.ids.text_input.text = f"{text[1:]}"
-        else:
-            self.screen.ids.text_input.text = f"-{text}"
+        if len(text) > 0:
+            if text[0] == "-":
+                self.screen.ids.text_input.text = f"{text[1:]}"
+            else:
+                self.screen.ids.text_input.text = f"-{text}"
 
 
 if __name__ == "__main__":
