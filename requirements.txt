@@ -1,2 +1,2 @@
-kivy-2.0.0
-kivymd-0.104.1 
+kivy
+kivymd
