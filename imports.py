@@ -13,6 +13,6 @@ from kivymd.theming import ThemableBehavior
 from kivymd.uix.button import MDFlatButton, MDRaisedButton, MDRectangleFlatIconButton
 from kivymd.uix.menu import MDDropdownMenu
 from kivymd.uix.dialog import MDDialog
-Config.set('graphics', 'resizable', True)
+Config.set('graphics', 'resizable', False)
 Config.set("input", "mouse", "mouse,multitouch_on_demand")
 Window.size = (400, 500)
