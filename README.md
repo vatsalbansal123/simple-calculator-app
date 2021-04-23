@@ -18,9 +18,9 @@
 To run the app, you must have [python](https://www.python.org/downloads/) and [git](https://git-scm.com/downloads) properly installed in your machine. Then use these 4 simple commands to run the app.
 
 ```
-git clone https://github.com/vatsalbansal123/SimpleCalculator.git
+git clone https://github.com/vatsalbansal123/SimpleCalculatorApp.git
 
-cd SimpleCalculator
+cd SimpleCalculatorApp
 
 pip install -r requirements.txt
 
